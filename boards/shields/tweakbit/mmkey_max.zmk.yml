@@ -1,8 +1,8 @@
 file_format: "1"
-id: mmkey_max
-name: mmkey_max
+id: mmkey_min
+name: mmkey_min
 type: shield
-url: https://github.com/myhub/zmk-config-mmkey_max
+url: https://github.com/myhub/zmk-config-mmkey_min
 requires: [seeeduino_xiao_ble]
 features:
   - keys

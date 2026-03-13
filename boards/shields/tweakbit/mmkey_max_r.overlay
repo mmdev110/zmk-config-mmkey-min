@@ -1,4 +1,4 @@
-#include "mmkey_max.dtsi"
+#include "mmkey_min.dtsi"
 #include <input/processors.dtsi>
 
 &default_transform {

@@ -1,7 +1,7 @@
-if SHIELD_MMKEY_MAX_R
+if SHIELD_mmkey_min_R
 
 config ZMK_KEYBOARD_NAME
-    default "mmkey_max"
+    default "mmkey_min"
 
 config ZMK_BLE
     bool
@@ -12,7 +12,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 endif
 
-if SHIELD_MMKEY_MAX_R || SHIELD_MMKEY_MAX_L
+if SHIELD_mmkey_min_R || SHIELD_mmkey_min_L
 config NFCT_PINS_AS_GPIOS
     bool
     default y

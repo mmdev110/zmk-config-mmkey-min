@@ -19,8 +19,8 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: mmkey_max_r
+    shield: mmkey_min_r
   - board: seeeduino_xiao_ble
-    shield: mmkey_max_l
+    shield: mmkey_min_l
   - board: seeeduino_xiao_ble
     shield: settings_reset

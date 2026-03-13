@@ -1,5 +1,5 @@
-config SHIELD_MMKEY_MAX_R
-    def_bool $(shields_list_contains,mmkey_max_r)
+config SHIELD_mmkey_min_R
+    def_bool $(shields_list_contains,mmkey_min_r)
 
-config SHIELD_MMKEY_MAX_L
-    def_bool $(shields_list_contains,mmkey_max_l)
+config SHIELD_mmkey_min_L
+    def_bool $(shields_list_contains,mmkey_min_l)
