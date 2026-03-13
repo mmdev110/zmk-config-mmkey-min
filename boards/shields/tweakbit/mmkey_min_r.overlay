@@ -1,7 +1,7 @@
 #include "mmkey_min.dtsi"
 #include <input/processors.dtsi>
 
-kscan0 {
+&kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
