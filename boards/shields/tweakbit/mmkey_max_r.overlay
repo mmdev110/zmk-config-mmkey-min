@@ -1,0 +1,16 @@
+#include "mmkey_max.dtsi"
+#include <input/processors.dtsi>
+
+&default_transform {
+    col-offset = <6>;
+};
+
+
+
+// Overrides for the input listener node
+//&trackball_central_listener {
+//    status = "okay";
+//    device = <&trackball_central>;
+//};
+
+

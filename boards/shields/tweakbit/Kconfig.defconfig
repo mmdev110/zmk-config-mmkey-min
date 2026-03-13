@@ -1,0 +1,43 @@
+if SHIELD_MMKEY_MAX_R
+
+config ZMK_KEYBOARD_NAME
+    default "mmkey_max"
+
+config ZMK_BLE
+    bool
+    default y
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    bool
+    default y
+endif
+
+if SHIELD_MMKEY_MAX_R || SHIELD_MMKEY_MAX_L
+config NFCT_PINS_AS_GPIOS
+    bool
+    default y
+
+config ZMK_SPLIT
+    bool
+    default y
+
+config INPUT
+    bool
+    default y
+
+config ZMK_POINTING
+    bool
+    default n
+
+config SPI
+    bool
+    default n
+
+config PMW3610
+    bool
+    default n
+
+config PMW3610_SWAP_XY
+    bool
+    default n
+endif
