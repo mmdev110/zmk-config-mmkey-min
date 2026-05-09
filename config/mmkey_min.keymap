@@ -54,37 +54,37 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W            &kp E          &kp R           &kp T         &kp Y        &kp U             &kp I           &kp O       &kp P
-&kp A  &kp S            &kp D          &kp F           &kp G         &kp H        &kp J             &kp K           &kp L       &kp BACKSPACE
-&kp Z  &kp X            &kp C          &kp V           &kp B         &kp N        &kp M             &kp COMMA       &kp PERIOD  &mt RSHIFT ENTER
-       &mt LALT ESCAPE  &mt LCTRL TAB  &mt LWIN SPACE  &kp LSHIFT    &lt 2 SPACE  &lt 1 LANGUAGE_2  &kp LANGUAGE_1  &kp SPACE
+&kp Q  &kp W           &kp E            &kp R           &kp T               &kp Y             &kp U             &kp I      &kp O        &kp P
+&kp A  &kp S           &kp D            &kp F           &kp G               &kp H             &kp J             &kp K      &kp L        &kp BACKSPACE
+&kp Z  &kp X           &kp C            &kp V           &kp B               &kp N             &kp M             &kp COMMA  &kp PERIOD   &mt RSHIFT ENTER
+       &mt LALT SPACE  &mt LCTRL SPACE  &mt LWIN SPACE  &mt LSHIFT SPACE    &lt 1 LANGUAGE_2  &lt 2 LANGUAGE_1  &kp SPACE  &lt 3 SPACE
             >;
         };
 
         symbol {
             bindings = <
-&kp ESCAPE    &kp TAB       &trans        &trans        &trans    &kp LPAR          &kp RPAR           &kp MINUS      &kp EQUAL  &kp GRAVE
+&kp ESCAPE    &kp TAB       &trans        &trans        &trans    &kp GRAVE         &trans             &kp MINUS      &kp EQUAL  &kp DELETE
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp SQT    &trans
 &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &kp SLASH         &kp BACKSLASH      &trans         &trans     &trans
               &trans        &trans        &trans        &trans    &trans            &trans             &trans         &trans
             >;
         };
 
-        arrow_util {
+        arrow {
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans            &trans          &trans    &trans        &kp K_VOLUME_DOWN  &kp C_VOL_UP
-&trans        &trans        &trans        &trans  &bt BT_CLR_ALL    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW    &kp DELETE
-&trans        &trans        &trans        &trans  &trans            &trans          &trans    &trans        &trans             &trans
-              &trans        &trans        &trans  &trans            &trans          &trans    &trans        &trans
+&trans  &trans  &trans  &trans  &trans    &trans          &trans    &trans        &trans           &trans
+&trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans    &trans          &trans    &trans        &trans           &trans
+        &trans  &trans  &trans  &trans    &trans          &trans    &trans        &trans
             >;
         };
 
         function {
             bindings = <
-&trans  &trans                &trans             &trans        &trans    &trans  &trans  &trans  &none   &none
-&none   &none                 &trans             &trans        &trans    &trans  &trans  &trans  &trans  &trans
-&none   &kp LS(LG(NUMBER_4))  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans                &trans             &none         &none     &none   &none   &trans  &trans
+&bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2  &none  &none             &trans  &trans  &trans  &kp C_VOLUME_DOWN  &kp C_VOL_UP
+&none         &none                 &none         &none  &bt BT_CLR_ALL    &trans  &trans  &trans  &trans             &trans
+&none         &kp LS(LG(NUMBER_4))  &none         &none  &none             &trans  &trans  &trans  &trans             &trans
+              &trans                &trans        &none  &none             &none   &none   &trans  &trans
             >;
         };
     };
