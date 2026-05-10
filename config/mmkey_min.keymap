@@ -57,16 +57,16 @@
 &kp Q  &kp W           &kp E            &kp R           &kp T               &kp Y  &kp U        &kp I           &kp O             &kp P
 &kp A  &kp S           &kp D            &kp F           &kp G               &kp H  &kp J        &kp K           &kp L             &kp BACKSPACE
 &kp Z  &kp X           &kp C            &kp V           &kp B               &kp N  &kp M        &none           &none             &mt RSHIFT ENTER
-       &mt LALT SPACE  &mt LCTRL SPACE  &mt LWIN SPACE  &mt LSHIFT SPACE    &to 1  &lt 2 SPACE  &kp LANGUAGE_2  &lt 3 LANGUAGE_1
+       &mt LALT SPACE  &mt LCTRL SPACE  &mt LWIN SPACE  &mt LSHIFT SPACE    &mo 1  &lt 2 SPACE  &kp LANGUAGE_2  &lt 3 LANGUAGE_1
             >;
         };
 
         symbol {
             bindings = <
-&kp ESCAPE    &kp TAB       &trans        &trans        &trans    &kp GRAVE         &trans             &kp MINUS      &kp EQUAL   &kp DELETE
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON  &kp SQT     &trans
-&kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &kp SLASH         &kp BACKSLASH      &kp COMMA      &kp PERIOD  &trans
-              &trans        &trans        &trans        &trans    &trans            &trans             &trans         &trans
+&kp ESCAPE    &kp TAB       &trans        &trans        &trans    &kp GRAVE      &trans      &kp MINUS         &kp EQUAL          &kp DELETE
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5    &kp SEMICOLON  &kp SQT     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0    &kp COMMA      &kp PERIOD  &kp SLASH         &kp BACKSLASH      &trans
+              &trans        &trans        &trans        &trans    &trans         &trans      &trans            &trans
             >;
         };
 
