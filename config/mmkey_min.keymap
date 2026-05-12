@@ -27,6 +27,11 @@
             bindings = <&bootloader>;
             key-positions = <47 9 34>;
         };
+
+        arrow {
+            bindings = <&mo 2>;
+            key-positions = <21 20>;
+        };
     };
 
     macros {
@@ -54,10 +59,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W           &kp E            &kp R           &kp T               &kp Y  &kp U        &kp I           &kp O             &kp P
-&kp A  &kp S           &kp D            &kp F           &kp G               &kp H  &kp J        &kp K           &kp L             &kp BACKSPACE
-&kp Z  &kp X           &kp C            &kp V           &kp B               &kp N  &kp M        &none           &none             &mt RSHIFT ENTER
-       &mt LALT SPACE  &mt LCTRL SPACE  &mt LWIN SPACE  &mt LSHIFT SPACE    &mo 1  &lt 2 SPACE  &kp LANGUAGE_2  &lt 3 LANGUAGE_1
+&kp Q  &kp W           &kp E            &kp R           &kp T               &kp Y             &kp U             &kp I      &kp O             &kp P
+&kp A  &kp S           &kp D            &kp F           &kp G               &kp H             &kp J             &kp K      &kp L             &kp BACKSPACE
+&kp Z  &kp X           &kp C            &kp V           &kp B               &kp N             &kp M             &none      &none             &lt 2 ENTER
+       &mt LALT SPACE  &mt LCTRL SPACE  &mt LWIN SPACE  &mt LSHIFT SPACE    &lt 1 LANGUAGE_1  &lt 2 LANGUAGE_2  &kp SPACE  &mt RSHIFT SPACE
             >;
         };
 
@@ -86,6 +91,15 @@
 &none         &kp LS(LG(NUMBER_4))  &none         &none  &none             &trans  &trans  &trans  &trans             &trans
               &trans                &trans        &none  &none             &none   &none   &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        function {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
