@@ -72,10 +72,10 @@
 
         arrow {
             bindings = <
-&trans         &trans            &trans            &trans  &trans    &trans          &trans          &trans        &trans           &kp DELETE
-&trans         &trans            &trans            &trans  &trans    &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&kp LS(LCTRL)  &kp LS(LC(LALT))  &kp LS(LC(LWIN))  &trans  &trans    &trans          &trans          &trans        &trans           &trans
-               &trans            &trans            &trans  &trans    &trans          &kp LANGUAGE_1  &trans        &trans
+&trans      &trans         &trans            &trans            &trans    &trans          &trans          &trans        &trans           &kp DELETE
+&trans      &trans         &trans            &trans            &trans    &kp LEFT_ARROW  &kp DOWN        &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp LSHIFT  &kp LS(LCTRL)  &kp LS(LC(LALT))  &kp LS(LC(LWIN))  &trans    &trans          &trans          &trans        &trans           &trans
+            &trans         &trans            &trans            &trans    &trans          &kp LANGUAGE_1  &trans        &trans
             >;
         };
 
